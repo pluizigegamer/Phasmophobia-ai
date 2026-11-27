@@ -5,7 +5,7 @@
     "speed": "Variable",
     "speed_detail": "1.53 m/s base; fast LOS acceleration (8.67s to max)",
     "forced_evidence": null,
-    "specials": ["Fast LOS", "Hiding Spot Hunt End"],
+    "specials": ["Steps in Salt", "Fast LOS", "Hiding Spot Hunt End"],
     "tells": "Accelerates faster on line of sight; hunt ends immediately if it reaches a player inside an official hiding spot."
   },
   {
@@ -14,8 +14,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Single Target", "Para Scream", "Singing Event"],
-    "tells": "Always female; stalks one target player and ignores others inside; 33% chance to scream on Parabolic Mic; prefers singing events."
+    "specials": ["Steps in Salt", "Single Target", "Para Scream", "Singing Event"],
+    "tells": "Always female; targets one player and ignores others while they are inside; 33% chance to scream on Parabolic Mic; prefers singing events."
   },
   {
     "name": "Dayan",
@@ -23,7 +23,7 @@
     "speed": "Variable",
     "speed_detail": "2.25 m/s moving near (<=10m) / 1.2 m/s still near",
     "forced_evidence": null,
-    "specials": ["Movement Speed", "Female Only"],
+    "specials": ["Steps in Salt", "Movement Speed", "Female Only"],
     "tells": "Always female; speeds up (2.25 m/s) when a nearby player moves within 10m and slows (1.2 m/s) when still."
   },
   {
@@ -32,7 +32,7 @@
     "speed": "Variable",
     "speed_detail": "Starts 3.0 m/s; drops 0.1 m/s per item interaction (min 0.4 m/s)",
     "forced_evidence": null,
-    "specials": ["Interaction Slowdown"],
+    "specials": ["Steps in Salt", "Interaction Slowdown"],
     "tells": "Starts hunts at 3.0 m/s and slows down as items are interacted with/thrown (down to 0.4 m/s)."
   },
   {
@@ -41,8 +41,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["60s Smudge", "Crucifix +50% Range", "Any-Sanity Hunt"],
-    "tells": "Can hunt at any sanity (70% threshold); 60s smudge timer instead of 90s; crucifix range +50% per tier."
+    "specials": ["Steps in Salt", "60s Smudge", "Crucifix +50% Range", "Early / Any-Sanity Hunt"],
+    "tells": "70% hunt threshold and ability can hunt at any sanity; 60s smudge timer instead of 90s; crucifix effective range +50% per tier."
   },
   {
     "name": "Deogen",
@@ -50,8 +50,8 @@
     "speed": "Variable",
     "speed_detail": "3.0 m/s far / 0.4 m/s close (<2.42m)",
     "forced_evidence": "Spirit Box",
-    "specials": ["Always Knows Location", "Close Slowdown", "Spirit Box Breathing"],
-    "tells": "Always knows player location during hunts; sprints fast from afar and slows to 0.4 m/s when close."
+    "specials": ["Steps in Salt", "Always Knows Location", "Close Slowdown", "Spirit Box Breathing"],
+    "tells": "Always knows player location during hunts (cannot hide); sprints at 3.0 m/s from afar and slows to 0.4 m/s when close; unique heavy breathing on Spirit Box."
   },
   {
     "name": "Gallu",
@@ -59,8 +59,8 @@
     "speed": "Variable",
     "speed_detail": "1.36 m/s Weakened / 1.7 m/s Normal / 1.96 m/s Enraged",
     "forced_evidence": null,
-    "specials": ["State Cycle", "Ignores Salt (Enraged)", "Steps in Salt"],
-    "tells": "Cycles Normal, Enraged (1.96 m/s, ignores salt), and Weakened (1.36 m/s) states."
+    "specials": ["Steps in Salt", "State Cycle"],
+    "tells": "Cycles Normal, Enraged (1.96 m/s, ignores salt/crucifix while enraged), and Weakened (1.36 m/s) states based on protective gear."
   },
   {
     "name": "Goryo",
@@ -68,35 +68,35 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": "D.O.T.S",
-    "specials": ["Camera-Only D.O.T.S", "No Room Change"],
-    "tells": "Cannot change favorite room; D.O.T.S only shows on video camera when no players are in the ghost room."
+    "specials": ["Steps in Salt", "Camera-Only D.O.T.S", "No Room Change"],
+    "tells": "Cannot change favorite room (except Monkey Paw wish); D.O.T.S only appears through a video camera when no players are in the ghost room."
   },
   {
     "name": "Hantu",
     "evidence": ["Ultraviolet", "Ghost Orb", "Freezing Temps"],
     "speed": "Variable",
-    "speed_detail": "Up to 2.7 m/s in freezing cold / 1.4 m/s >15C",
+    "speed_detail": "Up to 2.7 m/s in freezing cold / 1.4 m/s in warm rooms",
     "forced_evidence": "Freezing Temps",
-    "specials": ["Cold = Fast", "Freezing Breath", "Breaker Off / No Breaker On", "Steps in Salt"],
-    "tells": "Faster in cold rooms and slower in warm rooms; never turns breaker on; shows freezing breath in hunts with breaker off."
+    "specials": ["Steps in Salt", "Cold = Fast", "Freezing Breath", "No Breaker On", "No LOS Boost"],
+    "tells": "Faster in cold rooms and slower in warm rooms; no LOS speed boost; never turns breaker on; emits freezing breath during hunts when breaker is off."
   },
   {
     "name": "Jinn",
     "evidence": ["EMF 5", "Ultraviolet", "Freezing Temps"],
     "speed": "Fast",
-    "speed_detail": "2.5 m/s LOS (>3m) with Breaker On",
+    "speed_detail": "2.5 m/s on LOS (>3m) when Breaker is On",
     "forced_evidence": null,
-    "specials": ["Breaker On Required", "No Breaker Off", "Breaker Sanity Drain", "Steps in Salt"],
-    "tells": "Speeds up to 2.5 m/s on LOS (>3m) when breaker is on; never turns breaker off directly; can drain 25% sanity at breaker."
+    "specials": ["Steps in Salt", "Breaker On Required", "No Breaker Off", "Breaker Sanity Drain"],
+    "tells": "Speeds up to 2.5 m/s in line of sight (>3m) when breaker is on; never turns breaker off directly; can drain 25% sanity near players/breaker."
   },
   {
     "name": "Kormos",
     "evidence": ["Ghost Orb", "Spirit Box", "Ultraviolet"],
     "speed": "Normal",
-    "speed_detail": "1.7 m/s base (1.3x if detecting footsteps >5m)",
+    "speed_detail": "1.7 m/s base (1.3x when detecting footsteps >5m)",
     "forced_evidence": null,
-    "specials": ["Blind Visual", "Footstep Hearing", "No Mist/Chase Event"],
-    "tells": "Blind visual detection past ~5m; tracks player footsteps; no mist or chase events."
+    "specials": ["Steps in Salt", "Blind Visual", "Footstep Hearing", "No Mist / Chase Event"],
+    "tells": "Blind visual detection past ~5m; tracks player footsteps; never performs Ghost Mist or chase events."
   },
   {
     "name": "Mare",
@@ -104,17 +104,17 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["No Light On", "Instant Light Off", "Light Burst Event"],
-    "tells": "Never turns lights ON; high chance to turn lights OFF immediately or burst bulbs; hunts at 60% in dark / 40% in light."
+    "specials": ["Steps in Salt", "No Light On", "Instant Light Off", "Light Burst Event"],
+    "tells": "Never turns lights ON; high chance to immediately turn lights OFF or burst light bulbs; hunts at 60% sanity in dark / 40% in lit room."
   },
   {
     "name": "Moroi",
     "evidence": ["Spirit Box", "Ghost Writing", "Freezing Temps"],
     "speed": "Variable",
-    "speed_detail": "Scales faster as average sanity drops",
+    "speed_detail": "1.5 m/s at >=45% sanity up to 2.25 m/s at 0% sanity",
     "forced_evidence": null,
-    "specials": ["Low Sanity = Fast", "Sanity Curse", "7s Smudge Blind"],
-    "tells": "Faster at lower sanity; Spirit Box/Parabolic Mic can curse sanity drain; blinded for ~7s by smudge instead of 5s."
+    "specials": ["Steps in Salt", "Low Sanity = Fast", "Sanity Curse", "7s Smudge Blind"],
+    "tells": "Moves faster as average sanity drops (plus LOS boost); Spirit Box/Parabolic Mic response curses passive sanity drain; blinded for ~7s by smudge instead of 5s."
   },
   {
     "name": "Myling",
@@ -122,8 +122,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Quiet Hunt (<12m)", "Frequent Para Sounds"],
-    "tells": "Footsteps/vocals only audible under 12m during hunts (normal 20m); frequent Parabolic Mic sounds."
+    "specials": ["Steps in Salt", "Quiet Hunt (<12m)", "Frequent Para Sounds"],
+    "tells": "Footsteps and vocals are only audible within 12m during hunts (normal is 20m); makes frequent Parabolic Microphone sounds."
   },
   {
     "name": "Obake",
@@ -131,8 +131,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": "Ultraviolet",
-    "specials": ["6-Finger UV", "Shapeshift Blink", "25% Skip Salt/UV"],
-    "tells": "Can leave 6-fingered prints; shapeshifts during hunt blinks; 25% chance to skip UV/salt footprints."
+    "specials": ["Steps in Salt", "6-Finger UV", "Shapeshift Blink", "25% Skip UV"],
+    "tells": "Can leave 6-fingered handprints (or 2 on switches / 5 on keyboards); briefly shapeshifts model during hunt blinks; 25% chance to leave no UV."
   },
   {
     "name": "Obambo",
@@ -140,8 +140,8 @@
     "speed": "Variable",
     "speed_detail": "Slower when Calm / Faster when Aggressive",
     "forced_evidence": null,
-    "specials": ["Calm / Aggro Cycle (2m)"],
-    "tells": "Alternates between Calm and Aggressive states every 2 minutes, even mid-hunt."
+    "specials": ["Steps in Salt", "Calm / Aggro Cycle (2m)"],
+    "tells": "Alternates between Calm (slower, 10% hunt threshold) and Aggressive (faster, 65% hunt threshold) states every 2 minutes, even mid-hunt."
   },
   {
     "name": "Oni",
@@ -149,8 +149,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["20% Event Sanity Drain", "More Visible Hunt", "No Ghost Mist"],
-    "tells": "Drains 20% sanity on ghost events; stays more visible during hunt blinks; never does Ghost Mist events."
+    "specials": ["Steps in Salt", "20% Event Sanity Drain", "More Visible Hunt", "No Ghost Mist"],
+    "tells": "More active near players; drains 20% sanity on ghost events instead of 10%; stays visible longer during hunt blinks; never does Ghost Mist events."
   },
   {
     "name": "Onryo",
@@ -158,8 +158,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["3-Candle Hunt", "Candle = Crucifix", "Double Blowout (<20s)", "No Light Candle"],
-    "tells": "Lit candles/firelights act like crucifixes and block hunts; 3rd blowout triggers a hunt; can blow out same flame twice in <20s; cannot light candles."
+    "specials": ["Steps in Salt", "3-Candle Hunt", "Candle = Crucifix", "Double Blowout (<20s)", "No Light Candle"],
+    "tells": "Lit flames/candles act like crucifixes (4m range) and block hunts; blowing out 3 flames triggers a hunt; can extinguish same flame twice in <20s; never lights candles."
   },
   {
     "name": "Phantom",
@@ -167,8 +167,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Photo Disappears", "Invisible in Photo", "Roam EMF 2"],
-    "tells": "Taking a photo makes it disappear and it won't show in photos; roams to players leaving EMF 2; longer invisibility during hunts."
+    "specials": ["Steps in Salt", "Photo Disappears", "Roam EMF 2", "Longer Blink Invisibility"],
+    "tells": "Taking a photo during an event/D.O.T.S makes it disappear and it won't appear in the photo; roams to random players leaving EMF 2; longer invisibility gaps in hunts."
   },
   {
     "name": "Poltergeist",
@@ -176,8 +176,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Multi-Throw", "Item Explosion"],
-    "tells": "Throws items rapidly/multiple at once during hunts and can trigger high-speed item explosions from piles."
+    "specials": ["Steps in Salt", "Multi-Throw", "Item Explosion"],
+    "tells": "Throws items every 0.5s during hunts and can trigger high-velocity multi-item explosions (draining 2% sanity per thrown item)."
   },
   {
     "name": "Raiju",
@@ -185,8 +185,8 @@
     "speed": "Fast",
     "speed_detail": "2.5 m/s near active electronics",
     "forced_evidence": null,
-    "specials": ["Fast Near Electronics", "15m Electronic Range"],
-    "tells": "Moves at 2.5 m/s near active player electronics and disrupts electronics from 15m instead of 10m."
+    "specials": ["Steps in Salt", "Fast Near Electronics", "15m Electronic Range"],
+    "tells": "Moves at 2.5 m/s near active player electronics (6m/8m/10m by map size); disrupts electronics from 15m instead of 10m; hunts at 65% sanity near electronics."
   },
   {
     "name": "Revenant",
@@ -194,8 +194,8 @@
     "speed": "Variable",
     "speed_detail": "1.0 m/s no target / 3.0 m/s on target detection",
     "forced_evidence": null,
-    "specials": ["1.0 m/s -> 3.0 m/s Surge"],
-    "tells": "Moves slowly at 1.0 m/s until detecting a player (LOS/sound/electronics), surging to 3.0 m/s."
+    "specials": ["Steps in Salt", "1.0 m/s -> 3.0 m/s Surge"],
+    "tells": "Moves slowly at 1.0 m/s until detecting a player (LOS, voice, or active electronics), surging instantly to 3.0 m/s."
   },
   {
     "name": "Shade",
@@ -203,8 +203,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Shy in Room", "No Singing Event"],
-    "tells": "Won't hunt or do object interactions while players are in the same room; prefers Ghost Mist; never sings."
+    "specials": ["Steps in Salt", "Shy in Room", "No Singing Event"],
+    "tells": "Will not start a hunt or do EMF 3 object throws while a player is in the same room; prefers Ghost Mist events; never sings; hunts at 35% sanity."
   },
   {
     "name": "Spirit",
@@ -212,44 +212,44 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["180s Smudge"],
+    "specials": ["Steps in Salt", "180s Smudge"],
     "tells": "Smudge/incense blocks hunts for 180s instead of the standard 90s."
   },
   {
     "name": "Thaye",
     "evidence": ["Ghost Orb", "Ghost Writing", "D.O.T.S"],
     "speed": "Variable",
-    "speed_detail": "Fast when young -> Slow when aged",
+    "speed_detail": "2.75 m/s young -> 1.0 m/s fully aged",
     "forced_evidence": null,
-    "specials": ["Ages Over Time", "No LOS Boost"],
-    "tells": "Starts fast and active, then slows down and becomes less active as it ages near players; no LOS speed boost."
+    "specials": ["Steps in Salt", "Ages Over Time", "No LOS Boost"],
+    "tells": "Starts fast and very active (75% hunt threshold), aging every 1-2m near players down to 1.0 m/s and 15% threshold; no LOS speed boost."
   },
   {
     "name": "The Mimic",
-    "evidence": ["Spirit Box", "Ultraviolet", "Freezing Temps"],
+    "evidence": ["Freezing Temps", "Spirit Box", "Ultraviolet", "Ghost Orb"],
     "speed": "Variable",
     "speed_detail": "Copies mimicked ghost",
     "forced_evidence": "Ghost Orb",
-    "specials": ["Fake Ghost Orbs", "Mimics Ghosts"],
-    "tells": "Always shows Ghost Orbs (even on 0-evidence runs) and mimics abilities/speeds of other ghosts."
+    "specials": ["Steps in Salt", "Mimics Ghosts"],
+    "tells": "Always shows Ghost Orbs (even on 0-evidence runs) and switches which ghost's abilities, hunt threshold, and speed it copies every 30-120s."
   },
   {
     "name": "The Twins",
     "evidence": ["EMF 5", "Spirit Box", "Freezing Temps"],
     "speed": "Variable",
-    "speed_detail": "Slower twin (~1.5 m/s) / Faster twin (~1.9 m/s)",
+    "speed_detail": "1.53 m/s (Main) / 1.87 m/s (Decoy)",
     "forced_evidence": null,
-    "specials": ["Dual/Far Interactions", "Alternating Hunt Speeds"],
-    "tells": "Can perform close and long-range interactions back-to-back; hunts alternate between slower and faster speeds."
+    "specials": ["Steps in Salt", "Dual / Far Interactions", "Alternating Hunt Speeds"],
+    "tells": "Can perform a close interaction and a long-range interaction (up to 16m) within 1-2s; hunts alternate between 1.53 m/s and 1.87 m/s."
   },
   {
     "name": "Wraith",
-    "evidence": ["EMF 5", "Ultraviolet", "D.O.T.S"],
+    "evidence": ["EMF 5", "Spirit Box", "D.O.T.S"],
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Never Steps in Salt", "Teleports to Player"],
-    "tells": "Never steps in or disturbs salt piles (and ignores Tier 3 salt slowdown); can teleport to players leaving EMF 2."
+    "specials": ["Teleports to Player"],
+    "tells": "NEVER steps in or disturbs salt piles (and ignores Tier 3 salt slowdown); can teleport to a random player outside hunts leaving EMF 2 (or 5)."
   },
   {
     "name": "Yokai",
@@ -257,8 +257,8 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Voice Hunt (80%)", "Short Hunt Hearing (~2.5m)"],
-    "tells": "Talking near it can trigger hunts up to ~80% sanity; short detection/hearing range (~2.5m) during hunts."
+    "specials": ["Steps in Salt", "Voice Hunt (80%)", "Short Hunt Hearing (~2.5m)"],
+    "tells": "Talking near it can trigger hunts up to 80% sanity; short hearing/electronics detection range (~2.5m) during hunts."
   },
   {
     "name": "Yurei",
@@ -266,7 +266,7 @@
     "speed": "Normal",
     "speed_detail": "1.7 m/s",
     "forced_evidence": null,
-    "specials": ["Full Door Close", "90s Smudge Room Trap"],
-    "tells": "Can fully close doors (including exit/front doors); smudge traps it in its room for ~90s."
+    "specials": ["Steps in Salt", "Full Door Close", "90s Smudge Room Trap"],
+    "tells": "Can fully close an open door (including the front/exit door) with a delayed double door-touch sound; smudge traps it in its room for 90s; ability drains 15% sanity."
   }
 ]

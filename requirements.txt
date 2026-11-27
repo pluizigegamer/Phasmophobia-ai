@@ -1,0 +1,7 @@
+customtkinter
+mss
+opencv-python
+numpy
+sounddevice
+librosa
+requests
